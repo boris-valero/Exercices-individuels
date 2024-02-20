@@ -1,12 +1,9 @@
-//Étape 1//
-var nombre;
+let guess_a_number;
 
-//Étape 2//
-nombre = Number(window.prompt('Choisis un nombre'));
-if (nombre < 22) {
-  window.alert('PLUS GRAND');
-} else if (nombre > 22) {
-  window.alert('PLUS PETIT');
-} else if (nombre == 22) {
-  window.alert('BRAVO VOUS AVEZ DEVINÉ LE NOMBRE');
+guess_a_number = Number(window.prompt('Choisis un nombre'));
+while (guess_a_number != 22) {
+  window.alert('Ceci n\'est pas la bonne réponse');
+  guess_a_number = Number(window.prompt('Quel est votre âge ?'));
 }
+if (guess_a_number == 22) {
+  window.alert('Ceci est la bonne réponse');
