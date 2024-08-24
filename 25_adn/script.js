@@ -1,3 +1,5 @@
+// NB : J'étais absent le 23/08 : j'ai donc fait ma session kata le samedi 24 août en 3h30.
+
 //PARTIE A
 
 //Étape 1
