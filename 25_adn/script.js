@@ -1,4 +1,4 @@
-// NB : J'étais absent le 23/08 : j'ai donc fait ma session kata le samedi 24 août en 3h30 pour respecter le temps limité imposé.
+// NB : J'étais absent le 23/08 : j'ai donc fait ma session kata chez moi le samedi 24 août en 4h pour respecter le temps limité imposé.
 
 //PARTIE A
 
@@ -98,7 +98,6 @@ function translate_codon_to_protein(codons) {
   }
   return proteins;
 }
-
 let codons = ["TAA", "TAG", "TGC", "TGG", "TCA"];
 console.log(translate_codon_to_protein(codons));
 
@@ -115,9 +114,9 @@ function make_group_of_25(str) {
     }
     groupes.push(groupe);
   }
-  for (let i = 0; i < groupes.length; i++) {
-    console.log(groupes[i]);
-  }
+  return groupes;
 }
-
-console.log(make_group_of_25(str));
+let group_of_25 = make_group_of_25(str);
+group_of_25.forEach((groupe) => {
+  console.log(groupe);
+});
